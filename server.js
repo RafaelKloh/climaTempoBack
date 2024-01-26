@@ -12,7 +12,6 @@ server.use('/login',loginRouter)
  const db = conexao.connect(()=>{
     console.log('database connected')
  })
- console.log(conexao.config)
 server.listen(3000,async ()=>{
     console.log('Server rodando')
     
