@@ -4,7 +4,7 @@ export const conexao =
         host : 'localhost',
         user : 'root',
         password : '',
-        database : 'sistema_apostas'
+        database : 'jingle_bell'
     })
 
 

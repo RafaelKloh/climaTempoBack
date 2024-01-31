@@ -1,14 +1,13 @@
 import {conexao} from "./conexao.js";
 import express from 'express'
 import cors from "cors"
-import { userRouter } from "./rota/user.rota.js";
-import { loginRouter } from "./rota/login.rota.js";
+import { graficoRouter } from "./rota/grafico.rotas.js";
+
 
 const server = express()
 server.use(cors())
 server.use(express.json())
-server.use('/user',userRouter)
-server.use('/login',loginRouter)
+server.use('/grafico',graficoRouter)
  const db = conexao.connect(()=>{
     console.log('database connected')
  })
